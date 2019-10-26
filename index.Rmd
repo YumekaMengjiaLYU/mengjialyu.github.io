@@ -10,6 +10,5 @@ output:
 
 # This is Mengjia's awesome website
 
-## add an image
 ![](images/portrait.png)
 
