@@ -11,5 +11,5 @@ output:
 # This is Mengjia's awesome website
 
 ## add an image
-![](images/mother_daughter.jpg)
+#![](images/mother_daughter.jpg)
 
