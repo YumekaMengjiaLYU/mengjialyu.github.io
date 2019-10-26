@@ -8,7 +8,6 @@ output:
     css: image.css
 ---
 
-# This is Mengjia's awesome website
-
+#
 ![](images/portrait.png)
 
