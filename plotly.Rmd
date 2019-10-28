@@ -28,8 +28,8 @@ rest_inspec =
     dba, boro, cuisine_description, inspection_date, grade) %>%
   filter(  
     !is.na(grade),
-    cuisine_description == "Chinese"
-  ) %>%
-  sample_n(5000)
+    cuisine_description == "Chinese",
+    format(as.Date(inspection_date, format = "%Y-%m-%d"), "%Y") == "2017"
+  ) 
   
 ```
