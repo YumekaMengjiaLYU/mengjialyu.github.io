@@ -1,14 +1,18 @@
 ---
-title: "plotly"
-output: 
-  html_document:
-    code_folding: hide
-    toc: true
-    toc_float: true
-          
+title: "dashboard"
+output: html_document
 ---
 
-```{r}
+---
+title: "My first dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
 library(tidyverse)
 library(viridis)
 library(p8105.datasets)
@@ -17,18 +21,14 @@ library(plotly)
 
 ```{r}
 data("rest_inspec")
-```
-
-```{r}
-
 
 rest_inspec = 
   rest_inspec %>%
   select(
     dba, boro, cuisine_description, inspection_date, grade) %>%
   filter(  
-    grade != "NA",
-    
+    !is.na(grade),
+    grade != "Not Yet Graded",
     cuisine_description == "Chinese",
     format(as.Date(inspection_date, format = "%Y-%m-%d"), "%Y") == "2017"
   ) %>%
@@ -36,11 +36,22 @@ rest_inspec =
   
 ```
 
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
 ```{r}
 rest_inspec %>% 
   plot_ly(x = ~boro, y = ~grade, type = "scatter", mode = "markers",
           color = ~dba, alpha = 0.5)
 ```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
 
 ```{r}
 rest_inspec %>% 
@@ -49,7 +60,9 @@ rest_inspec %>%
           colors = "Set2")
 ```
 
-```{r scatterplot}
+### Chart C
+
+```{r}
 rest_inspec %>%
   count(boro) %>%
   mutate(boro = fct_reorder(boro, n)) %>%

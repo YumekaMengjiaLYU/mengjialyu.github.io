@@ -347,7 +347,9 @@ div.tocify {
         <li>
   <a href="about.html">About/Resume</a>
 </li>
-<li class="dropdown-header">Examples</li>
+<li>
+  <a href="dashboard.html">Dashboard</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -382,43 +384,10 @@ div.tocify {
 </div>
 
 
-<p><link rel="stylesheet"  type="text/css"></p>
 <center>
 <img src="images/portrait.png" style="width:25%">
 </center>
 <p>I graduated from the [University of California] (<a href="http://www.ece.ucsd.edu/" class="uri">http://www.ece.ucsd.edu/</a>) with a BS in electrical engineering in 2017. In 2019 I began working toward a MS in biostatistics at <a href="https://www.mailman.columbia.edu/become-student/departments/biostatistics">Columbia University</a>.</p>
-<div class="main-post-list hidden">
-
-<ol class="post-list">
-{% for post in paginator.posts %}
-<li>
-<h2 class="post-list__post-title post-title">
-<a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a>
-</h2>
-<p class="excerpt">
-{{ post.content | strip_html | strip_newlines | truncate: 250 }}…
-</p>
-<div class="post-list__meta">
-<pre><code>    &lt;time datetime=&quot;{{post.date | date: date_to_xmlschema}}&quot; class=&quot;post-list__meta--date date&quot;&gt;
-      &lt;img src=&quot;/images/calendar.png&quot; width=&quot;20px&quot; /&gt; 
-      {{ post.date | date: &quot;%F&quot;}}&lt;/time&gt; 
-    &lt;div class = &quot;tag-img-icon&quot;&gt;
-      &lt;img src=&quot;/images/tag-icon.svg&quot; width=&quot;20px&quot; /&gt; 
-    &lt;/div&gt;
-    &lt;a href=&quot;/tags&quot;&gt;
-      &lt;div class = &quot;post-list-icon-mate&quot;&gt;
-        &lt;span class=&quot;post-list__meta--tags-right&quot;&gt;{{ post.tags }}&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class = &quot;post-list-small-mate&quot;&gt;
-      &lt;a class=&quot;btn-border-small&quot; href={{ post.url }}&gt;阅读全文 » &lt;/a&gt;
-      &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;hr class=&quot;post-list__divider&quot; /&gt;
-&lt;/li&gt;
-{% endfor %}</code></pre>
-</ol>
-<p>{% include pagination.html %}</p>
-</div>
 
 
 

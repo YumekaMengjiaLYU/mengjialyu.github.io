@@ -7,7 +7,9 @@ navbar:
   left:
     - text: "About/Resume"
       href: about.html
-    - text: "Examples"
+    - text: "Dashboard"
+      href: dashboard.html
+      
    
   
   right:  
@@ -18,25 +20,7 @@ navbar:
     - icon: fa-github fa-lg
       href: http://github.com/yumekamengjialyu/
 
-permalink: /:year/:month/:title/
-# Format
-highlighter: rouge
 
-textColor: #FF0000
-
-# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: clear
-
-# The blog button should not be removed.
-blog_button:
-    title: 博客主页
-
-# Navigation buttons in the front page.s
-nav:
-    - {title: 所有文章, description: archive, url: '/archive'}   
-    - {title: 标签, description: tags, url: '/tags'}      
-    - {title: 关于我, description: about, url: '/about'}      
-    
 
 # Pagination
 gems: [jekyll-paginate,jekyll-sitemap]
@@ -45,4 +29,4 @@ paginate_path: "page/:num/"
 output:
   html_document:
     theme: journal
-    css: 'main.css'
+    css: style.css

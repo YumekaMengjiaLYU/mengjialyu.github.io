@@ -5,6 +5,5 @@ output:
     toc: true
     toc_float: true
 ---
-<link rel="stylesheet"  >
 
-
+My resume is available [here] (documents/Yumeka_2PageResume_pdf.pdf).
