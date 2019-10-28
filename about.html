@@ -12,11 +12,11 @@
 
 
 
-<title>Welcome to Yumeka’s World</title>
+<title>About me</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -74,7 +74,6 @@ h6 {
 }
 </style>
 
-<link rel="stylesheet" href="main.css" type="text/css" />
 
 
 
@@ -90,6 +89,7 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -109,33 +109,33 @@ summary {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 51px;
+  padding-top: 61px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 66px;
+  margin-top: -66px;
 }
 .dropdown-submenu {
   position: relative;
@@ -185,10 +185,8 @@ $(document).ready(function () {
   if (href === "")
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
-
   // mark it active
   menuAnchor.parent().addClass('active');
-
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
 });
@@ -206,7 +204,6 @@ $(document).ready(function () {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
-
 .tabset-dropdown > .nav-tabs > li.active:before {
   content: "";
   font-family: 'Glyphicons Halflings';
@@ -214,12 +211,10 @@ $(document).ready(function () {
   padding: 10px;
   border-right: 1px solid #ddd;
 }
-
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
   content: "&#xe258;";
   border: none;
 }
-
 .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
   content: "";
   font-family: 'Glyphicons Halflings';
@@ -227,11 +222,9 @@ $(document).ready(function () {
   padding: 10px;
   border-right: 1px solid #ddd;
 }
-
 .tabset-dropdown > .nav-tabs > li.active {
   display: block;
 }
-
 .tabset-dropdown > .nav-tabs > li > a,
 .tabset-dropdown > .nav-tabs > li > a:focus,
 .tabset-dropdown > .nav-tabs > li > a:hover {
@@ -239,12 +232,10 @@ $(document).ready(function () {
   display: inline-block;
   border-radius: 4px;
 }
-
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
   display: block;
   float: none;
 }
-
 .tabset-dropdown > .nav-tabs > li {
   display: none;
 }
@@ -255,7 +246,6 @@ $(document).ready(function () {
 
 
 <style type="text/css">
-
 #TOC {
   margin: 25px 0px 20px 0px;
 }
@@ -265,49 +255,38 @@ $(document).ready(function () {
   width: 100%;
 }
 }
-
-
 .toc-content {
   padding-left: 30px;
   padding-right: 40px;
 }
-
 div.main-container {
   max-width: 1200px;
 }
-
 div.tocify {
   width: 20%;
   max-width: 260px;
   max-height: 85%;
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
   div.tocify {
     width: 25%;
   }
 }
-
 @media (max-width: 767px) {
   div.tocify {
     width: 100%;
     max-width: none;
   }
 }
-
 .tocify ul, .tocify li {
   line-height: 20px;
 }
-
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
 }
-
 .tocify .list-group-item {
   border-radius: 0px;
 }
-
-
 </style>
 
 
@@ -340,33 +319,39 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Mengjia Lyu</a>
+      <a class="navbar-brand" href="index.html">Home</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li>
-  <a href="about.html">About</a>
-</li>
-<li class="dropdown-header">Examples</li>
-<li>
-  <a href="resume.html">Resume</a>
-</li>
+        
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="mailto:&lt;ml4420@columbia.edu&gt;">
+  <a href="about.html">About</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Examples
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="plotly.html">Plotly</a>
+    </li>
+    <li>
+      <a href="dashboard.html">Dashboard</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="mailto:&lt;you@youremail.com&gt;">
     <span class="fa fa-envelope fa-lg"></span>
      
   </a>
 </li>
 <li>
-  <a href="https://www.linkedin.com/in/kaylyu/">
-    <span class="fa fa-linkedin fa-lg"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="http://github.com/yumekamengjialyu/">
+  <a href="http://github.com/bst-p8105/">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -380,48 +365,14 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Welcome to Yumeka’s World</h1>
+<h1 class="title toc-ignore">About me</h1>
 
 </div>
 
 
-<p><link rel="stylesheet"  type="text/css"></p>
-<center>
-<img src="images/portrait.png" style="width:25%">
-</center>
-<p>I graduated from the [University of California] (<a href="http://www.ece.ucsd.edu/" class="uri">http://www.ece.ucsd.edu/</a>) with a BS in electrical engineering in 2017. In 2019 I began working toward a MS in biostatistics at <a href="https://www.mailman.columbia.edu/become-student/departments/biostatistics">Columbia University</a>.</p>
-<div class="main-post-list hidden">
-
-<ol class="post-list">
-{% for post in paginator.posts %}
-<li>
-<h2 class="post-list__post-title post-title">
-<a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a>
-</h2>
-<p class="excerpt">
-{{ post.content | strip_html | strip_newlines | truncate: 250 }}…
+<p>I have interests in mental health, data science, UX design and meditation. My resume is 
+<a href="./documents/Mengjia_Resume_2019.pdf">here</a>
 </p>
-<div class="post-list__meta">
-<pre><code>    &lt;time datetime=&quot;{{post.date | date: date_to_xmlschema}}&quot; class=&quot;post-list__meta--date date&quot;&gt;
-      &lt;img src=&quot;/images/calendar.png&quot; width=&quot;20px&quot; /&gt; 
-      {{ post.date | date: &quot;%F&quot;}}&lt;/time&gt; 
-    &lt;div class = &quot;tag-img-icon&quot;&gt;
-      &lt;img src=&quot;/images/tag-icon.svg&quot; width=&quot;20px&quot; /&gt; 
-    &lt;/div&gt;
-    &lt;a href=&quot;/tags&quot;&gt;
-      &lt;div class = &quot;post-list-icon-mate&quot;&gt;
-        &lt;span class=&quot;post-list__meta--tags-right&quot;&gt;{{ post.tags }}&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;div class = &quot;post-list-small-mate&quot;&gt;
-      &lt;a class=&quot;btn-border-small&quot; href={{ post.url }}&gt;阅读全文 » &lt;/a&gt;
-      &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;hr class=&quot;post-list__divider&quot; /&gt;
-&lt;/li&gt;
-{% endfor %}</code></pre>
-</ol>
-<p>{% include pagination.html %}</p>
-</div>
 
 
 
@@ -431,7 +382,6 @@ div.tocify {
 </div>
 
 <script>
-
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
@@ -439,8 +389,6 @@ function bootstrapStylePandocTables() {
 $(document).ready(function () {
   bootstrapStylePandocTables();
 });
-
-
 </script>
 
 <!-- tabsets -->
@@ -449,7 +397,6 @@ $(document).ready(function () {
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
-
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
     $(this).parent().toggleClass('nav-tabs-open')
@@ -461,12 +408,10 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
-
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
         .removeClass('toc-ignore')
         .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
     // establish options
     var options = {
       selectors: "h1,h2,h3",
@@ -480,7 +425,6 @@ $(document).ready(function ()  {
     };
     options.showAndHide = true;
     options.smoothScroll = true;
-
     // tocify
     var toc = $("#TOC").tocify(options).data("toc-tocify");
 });

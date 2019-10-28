@@ -1,14 +1,49 @@
-name: "Yay internet!"
+name: "Mengjia Lyu"
 output_dir: "."
 navbar:
-  title: "Home"
-  right:
+  title: "Mengjia Lyu"
+  subtitle: "吕梦嘉"
+ 
+  left:
     - text: "About"
       href: about.html
+    - text: "Examples"
+   
+    - text: "Resume"
+      href: resume.html
+  right:  
     - icon: fa-envelope fa-lg
       href: mailto:<ml4420@columbia.edu>
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/kaylyu/
     - icon: fa-github fa-lg
       href: http://github.com/yumekamengjialyu/
+
+permalink: /:year/:month/:title/
+# Format
+highlighter: rouge
+
+textColor: #FF0000
+
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: clear
+
+# The blog button should not be removed.
+blog_button:
+    title: 博客主页
+
+# Navigation buttons in the front page.s
+nav:
+    - {title: 所有文章, description: archive, url: '/archive'}   
+    - {title: 标签, description: tags, url: '/tags'}      
+    - {title: 关于我, description: about, url: '/about'}      
+    
+
+# Pagination
+gems: [jekyll-paginate,jekyll-sitemap]
+paginate: 20
+paginate_path: "page/:num/"
 output:
   html_document:
-    theme: cerulean
+    theme: journal
+    css: 'main.css'
