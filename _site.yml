@@ -5,12 +5,11 @@ navbar:
   subtitle: "吕梦嘉"
  
   left:
-    - text: "About"
+    - text: "About/Resume"
       href: about.html
     - text: "Examples"
    
-    - text: "Resume"
-      href: resume.html
+  
   right:  
     - icon: fa-envelope fa-lg
       href: mailto:<ml4420@columbia.edu>
