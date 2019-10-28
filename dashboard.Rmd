@@ -1,15 +1,11 @@
 ---
 title: "dashboard"
-output: html_document
----
-
----
-title: "My first dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
 ---
+
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
@@ -19,20 +15,18 @@ library(p8105.datasets)
 library(plotly)
 ```
 
-```{r}
-data("rest_inspec")
+```{r data}
+data("ny_noaa")
 
-rest_inspec = 
-  rest_inspec %>%
-  select(
-    dba, boro, cuisine_description, inspection_date, grade) %>%
-  filter(  
-    !is.na(grade),
-    grade != "Not Yet Graded",
-    cuisine_description == "Chinese",
-    format(as.Date(inspection_date, format = "%Y-%m-%d"), "%Y") == "2017"
+
+ny_noaa = 
+  ny_noaa %>%
+  na.omit() %>%
+ 
+   filter( 
+    format(as.Date(date, format = "%Y-%m-%d"), "%Y") == "1994"
   ) %>%
-  distinct()
+  sample_n(200) 
   
 ```
 
@@ -43,9 +37,15 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-rest_inspec %>% 
-  plot_ly(x = ~boro, y = ~grade, type = "scatter", mode = "markers",
-          color = ~dba, alpha = 0.5)
+scatter_plot = ny_noaa %>% 
+  ggplot(aes(x = tmin, y = tmax, color = snow)) +
+  geom_point(alpha = 0.5) +
+  scale_color_viridis() +
+  coord_cartesian() +
+  theme_classic() +
+  theme(axis.text.x  = element_text(angle = 90, hjust = 1))
+
+ggplotly(scatter_plot)
 ```
 
 Column {data-width=350}
@@ -54,17 +54,18 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
-rest_inspec %>% 
-  mutate(boro = fct_reorder(boro, grade)) %>% 
-  plot_ly(y = ~grade, color = ~boro, type = "box",
+ny_noaa %>%
+  mutate( month = format(as.Date(date, format = "%Y-%m-%d"), "%m")) %>%
+   
+  plot_ly(y = ~prcp, color = ~month, type = "box",
           colors = "Set2")
 ```
 
 ### Chart C
 
 ```{r}
-rest_inspec %>%
-  count(boro) %>%
-  mutate(boro = fct_reorder(boro, n)) %>%
-  plot_ly(x = ~boro, y = ~n, type = "bar")
+ny_noaa %>%
+  count(id) %>%
+  mutate(id = fct_reorder(id, n)) %>%
+  plot_ly(x = ~id, y = ~n, type = "bar") 
 ```

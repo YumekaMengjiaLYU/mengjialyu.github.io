@@ -22,11 +22,8 @@ navbar:
 
 
 
-# Pagination
-gems: [jekyll-paginate,jekyll-sitemap]
-paginate: 20
-paginate_path: "page/:num/"
+
 output:
   html_document:
-    theme: journal
+    theme: cosmo
     css: style.css

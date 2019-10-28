@@ -6,4 +6,4 @@ output:
     toc_float: true
 ---
 
-My resume is available [here] (documents/Yumeka_2PageResume_pdf.pdf).
+My resume is available [[here]](./documents/Yumeka_2PageResume_pdf.pdf)
