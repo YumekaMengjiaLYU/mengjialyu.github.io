@@ -1,0 +1,35 @@
+---
+title: "plotly"
+output: 
+  html_document:
+    code_folding: hide
+    toc: true
+    toc_float: true
+          
+---
+
+```{r}
+library(tidyverse)
+library(viridis)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r}
+data("rest_inspec")
+```
+
+```{r}
+set.seed(1)
+
+rest_inspec = 
+  rest_inspec %>%
+  select(
+    dba, boro, cuisine_description, inspection_date, grade) %>%
+  filter(  
+    !is.na(grade),
+    cuisine_description == "Chinese"
+  ) %>%
+  sample_n(5000)
+  
+```
