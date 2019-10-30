@@ -44,7 +44,8 @@ scatter_plot = ny_noaa %>%
   coord_cartesian() +
   theme_classic() +
   theme(axis.text.x  = element_text(angle = 90, hjust = 1)) +
-  ggtitle("Relationship Between Minimum Temp & Maximum Temp in NY,1994")
+  ggtitle("Relationship Between Minimum Temp & Maximum Temp in NY,1994") +
+  labs(x = "Minimum Temperature", y = "Maximum Temperature")
 
 ggplotly(scatter_plot)
 ```
@@ -57,10 +58,10 @@ Column {data-width=350}
 ```{r}
 ny_noaa %>%
   mutate( month = format(as.Date(date, format = "%Y-%m-%d"), "%m")) %>%
-   
   plot_ly(y = ~prcp, color = ~month, type = "box",
           colors = "Set2") %>%
-  layout(title = "Relationship Between Precipitation and Month in NY, 1994")
+  layout(title = "Relationship Between Precipitation and Month in NY, 1994",
+         xaxis = list(title = "Month"), yaxis = list(title = "Precipitation"))
 ```
 
 ### Chart C
@@ -70,5 +71,6 @@ ny_noaa %>%
   count(id) %>%
   mutate(id = fct_reorder(id, n)) %>%
   plot_ly(x = ~id, y = ~n, type = "bar") %>%
-  layout(title = "Number of Observations Made Per Weather Station in NY")
+  layout(title = "Number of Observations Made Per Weather Station in NY",
+         xaxis = list(title = "Weather Station ID"), yaxis = list(title = "Number of Observations"))
 ```
