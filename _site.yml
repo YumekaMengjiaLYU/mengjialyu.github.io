@@ -9,8 +9,8 @@ navbar:
       href: about.html
     - text: "Dashboard"
       href: dashboard.html
-      
-   
+    - text: "Thoughts"  
+      href: thoughts.html    
   
   right:  
     - icon: fa-envelope fa-lg
