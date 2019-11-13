@@ -2,16 +2,15 @@ name: "Mengjia Lyu"
 output_dir: "."
 navbar:
   title: "Mengjia Lyu"
-  subtitle: "吕梦嘉"
- 
   left:
-    - text: "About/Resume"
+    - text: "About"
       href: about.html
-    - text: "Dashboard"
-      href: dashboard.html
+    - text: "Projects"
+      href: projects.html
     - text: "Thoughts"  
       href: thoughts.html    
-  
+    - text: "Resume"
+      href: documents/Yumeka_2PageResume_pdf.pdf
   right:  
     - icon: fa-envelope fa-lg
       href: mailto:<ml4420@columbia.edu>
@@ -19,11 +18,10 @@ navbar:
       href: https://www.linkedin.com/in/kaylyu/
     - icon: fa-github fa-lg
       href: http://github.com/yumekamengjialyu/
-
-
-
-
 output:
   html_document:
-    theme: cosmo
+    highlight: textmate
     css: style.css
+    include: 
+     after_body: footer.html
+    

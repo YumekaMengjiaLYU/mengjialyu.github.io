@@ -1,18 +1,19 @@
 ---
-title: "Welcome to Yumeka's World"
+title: ""
 output: 
   html_document:
-    toc: true
-    toc_float: true
-    theme: lumen
-    highlight: tango
-    css: main.css
+ 
+    
+    css: style.css
 ---
 
+<link href="./styles.css" rel="stylesheet"></link> 
 
 
 <center><img src="images/portrait.png" style="width:25%"></center>
-I graduated from the [University of California] (http://www.ece.ucsd.edu/) with a BS in electrical engineering in 2017. In 2019 I began working toward a MS in biostatistics at [Columbia University](https://www.mailman.columbia.edu/become-student/departments/biostatistics). 
+I graduated from the [University of California] (http://www.ece.ucsd.edu/) with a BS in electrical engineering in 2017.\
+In 2019 I began working toward a MS in biostatistics at [Columbia University](https://www.mailman.columbia.edu/become-student/departments/biostatistics). \
+I am actively looking for internships in data science/data engineering.
 
 
 

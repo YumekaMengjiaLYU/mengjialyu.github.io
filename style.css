@@ -1,12 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css?family=Port+Lligat+Sans&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css?family=Crimson&display=swap');
+
+.navbar{
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  background-color:white;
+  border: none;
+  color: green;
+}
+
+.navbar-brand {
+  font-size: 24px;
+}
+/*
 /* Whole document: */
 body{
-  font-family: Helvetica;
-  font-size: 16pt;
+  font-family: 'Crimson';
+  font-size: 12pt;
 }
-/* Headers */
+ 
 h1,h2,h3,h4,h5,h6{
   font-size: 24pt;
 }
+
+*/
+
+
 
 #rbmvFooter {
   position: relative;
