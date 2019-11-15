@@ -1,8 +1,0 @@
----
-title: "projects"
-output: html_document
----
-
-
-<link href="./styles.css" rel="stylesheet"></link> 
-Here is a list of my projects.
