@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "thoughts"
-
-    
+title: "What makes life worth living"
+date: 2019-11-14
+description: "life"    
+tag: life
 ---
 
 ### What makes life worth living?
