@@ -1,12 +1,12 @@
 # Basic
-title: 吕梦嘉
-subtitle: 个人站
-description: 欢迎
+title: Mengjia Lyu (吕梦嘉)
+subtitle: Personal Site
+description: Welcome To Mengjia Land!
 # 头像里面的标题
-avatarTitle: Mengjia Lyu
+avatarTitle: Data Scientist and Engineer
 # 头像里面的描述
-avatarDesc: 
-#url: "http://baixin.io"
+avatarDesc: Anything but Ordinary
+
 
 # Comment
 #comment:
@@ -42,17 +42,17 @@ highlighter: rouge
 textColor: #FF0000
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: clear
+cover_color: slate
 
 # The blog button should not be removed.
 blog_button:
-    title: 博客主页
+    title: Homepage
 
 # Navigation buttons in the front page.s
 nav:
-    - {title: 所有文章, description: archive, url: '/archive'}   
-    - {title: 标签, description: tags, url: '/tags'}      
-    - {title: 关于我, description: about, url: '/about'}      
+    - {title: Posts, description: archive, url: '/archive'}   
+    - {title: Tags, description: tags, url: '/tags'}      
+    - {title: About Me, description: about, url: '/about'}      
     
 
 # Pagination
