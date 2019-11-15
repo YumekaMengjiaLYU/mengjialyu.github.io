@@ -3,7 +3,7 @@ title: Mengjia Lyu (吕梦嘉)
 subtitle: Personal Site
 description: Welcome To Mengjia Land!
 # 头像里面的标题
-avatarTitle: Data Scientist and Engineer
+avatarTitle: Data Engineer
 # 头像里面的描述
 avatarDesc: Anything but Ordinary
 
@@ -11,7 +11,7 @@ avatarDesc: Anything but Ordinary
 # Comment
 #comment:
  
- #   disqus: leopard
+ #  disqus: yum
     # gitment: xxx // 需要修改 comments.html中的client_id和client_secret
     # uyan: 2143225  # 有言id,登录有言官网申请
 
@@ -41,7 +41,7 @@ highlighter: rouge
 textColor: #FF0000
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: slate
+cover_color: purple
 
 # The blog button should not be removed.
 blog_button:
