@@ -1,26 +1,26 @@
 # Basic
-title: Mengjia Lyu 
+title: Mengjia Lyu
 subtitle: Personal Site
 description: also known as 梦嘉 ゆめか
 # 头像里面的标题
-avatarTitle: Data Engineer
+avatarTitle: Code/Creativity
 # 头像里面的描述
 avatarDesc: Anything but Ordinary
 
 
 # Comment
 #comment:
- 
+
  #  disqus: yum
     # gitment: xxx // 需要修改 comments.html中的client_id和client_secret
     # uyan: 2143225  # 有言id,登录有言官网申请
 
 # Social
 social:
-    
+
     github: YumekaMengjiaLYU
-    
-    # twitter: 
+
+    # twitter:
     mail: ml4420@columbia.edu
 
 
@@ -29,8 +29,8 @@ social:
 # Google Analytics
 
 ga:
-    id: UA-152032018-1 
-    host: auto  
+    id: UA-152032018-1
+    host: auto
 
 
 
@@ -49,15 +49,13 @@ blog_button:
 
 # Navigation buttons in the front page.s
 nav:
-    - {title: Tags, description: tags, url: '/tags'}      
-    - {title: About Me, description: about, url: '/about'}  
-    - {title: Posts, description: archive, url: '/archive'}   
-       
-    
+    - {title: Tags, description: tags, url: '/tags'}
+    - {title: About Me, description: about, url: '/about'}
+    - {title: Posts, description: archive, url: '/archive'}
+
+
 
 # Pagination
 gems: [jekyll-paginate,jekyll-sitemap]
 paginate: 20
 paginate_path: "page/:num/"
-
-
