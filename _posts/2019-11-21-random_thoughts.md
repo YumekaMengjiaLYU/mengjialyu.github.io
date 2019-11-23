@@ -1,3 +1,9 @@
+---
+layout: post
+comments: true
+# other options
+---
+
 **Devote yourself to loving others**
 
 **Devote yourself to your communities**
