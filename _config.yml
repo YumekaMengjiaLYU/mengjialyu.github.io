@@ -11,8 +11,10 @@ avatarDesc: Anything but Ordinary
 # Comment
 comment:
 
- disqus: yum
-    #gitment: xxx // 需要修改 comments.html中的client_id和client_secret
+ disqus:
+    gitment:
+      client_id: dd180173ac06024f7122,
+      client_secret: 7a39cc97111b9ae57be701fd077490beef0c89b9 
     # uyan: 2143225  # 有言id,登录有言官网申请
 
 # Social
