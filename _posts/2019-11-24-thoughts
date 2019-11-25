@@ -1,0 +1,24 @@
+---
+layout: "post"
+title: "An Interesting Problem in Expectation"
+date: "2019-11-24"
+---
+It's been almost three months since the start of the semester,
+and I just notice from actually taking a close look at my graded homework that
+I lost points many times
+for not showing E[|X|] exisits.
+
+This motivates me to google and find the following theorem
+
+A random variable X has expectation if and only if |X| has expectation.
+
+However, if we can show that the integral of expectation is equal to 1, isn't existence self-evident
+since the integral converges?
+
+After checking the solutions for the homework, I realize that I have to add
+E[|X|] = E[X] before actually calculating the E[X].
+
+Another mistake that I repeatedly made in the homeworks is that I did not explicitly
+state the function is bigger than zero to prove that some function is a pdf.
+
+Can we have negative probability? 

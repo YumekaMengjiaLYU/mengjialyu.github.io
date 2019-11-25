@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "sacredness_of_life"
+title: "Sacredness of Life"
 date: "2019-11-15 19:13"
 ---
 ## Song of Myself
