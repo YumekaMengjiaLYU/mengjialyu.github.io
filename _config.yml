@@ -52,7 +52,7 @@ nav:
     - {title: Tags, description: tags, url: '/tags'}
     - {title: About Me, description: about, url: '/about'}
     - {title: Posts, description: archive, url: '/archive'}
-
+    - {title: CV, description: about, url: '/online-cv'}
 
 
 # Pagination
