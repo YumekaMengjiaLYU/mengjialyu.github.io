@@ -737,8 +737,8 @@ img::-moz-selection {
     display: inline-block;
     position: relative;
     width: 100%;
-    border-color: #666;
-    color: #666;
+    border-color: rgb(125, 61, 209);
+    color: rgb(125, 61, 209);
     /*opacity: .8; */
   }
 
